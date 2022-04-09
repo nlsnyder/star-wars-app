@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Heading from './components/Heading';
+import SearchAPI from './components/SearchAPI';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-Mulish">
+      <Heading title="Everything you want to know about Star Wars" description="Grab any information about the Star Wars universe you could possibly want to know. This website is powered by the wonderful Star Wars API!"/>
+      <SearchAPI />
     </div>
   );
 }
